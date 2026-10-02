@@ -1,7 +1,7 @@
 # AllowHuskSpawn
 My first Mixin experience.
 
-Changes Husk's spawnrules to match Zombies's.
+Changes Husk's spawnrules to match Zombie's.
 Pair it with [Sandy Husks](https://modrinth.com/datapack/sandy-husks) datapack and you can build an authentic sand farm!
 
 ## Compatibility
