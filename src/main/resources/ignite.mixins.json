@@ -1,0 +1,15 @@
+{
+  "compatibilityLevel": "JAVA_25",
+  "required": true,
+  "minVersion": "0.8.7",
+  "mixinextras": {
+    "minVersion": "0.5.3"
+  },
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "package": "com.notfoundname.allowhuskspawn.ignite",
+  "mixins": [
+    "IgniteInit"
+  ]
+}

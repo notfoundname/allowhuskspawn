@@ -1,0 +1,36 @@
+plugins {
+    id "java"
+    id "io.canvasmc.weaver.userdev" version "2.+"
+    id "io.canvasmc.horizon" version "1.+"
+}
+
+group = "com.notfoundname"
+version = "1.0-SNAPSHOT"
+description = "Makes Husks follow Zombies' spawn rules."
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    horizon.horizonApi("1.+")
+    paperweight.paperDevBundle("26.1.2.build.+")
+
+    compileOnly "space.vectrix.ignite:ignite-api:1.2.1"
+}
+
+tasks {
+    compileJava {
+        options.release = 25
+    }
+    processResources {
+        filesMatching("*.json") {
+            expand ([ "version" : version,
+                      "description" : description ])
+        }
+    }
+}

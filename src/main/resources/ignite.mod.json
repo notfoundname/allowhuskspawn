@@ -1,0 +1,9 @@
+{
+  "id": "allowhuskspawn",
+  "version": "${version}",
+  "mixins": [
+    "ignite.mixins.json",
+    "allowhuskspawn.mixins.json"
+  ],
+  "wideners": []
+}

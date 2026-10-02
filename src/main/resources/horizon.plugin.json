@@ -1,0 +1,21 @@
+{
+  "name": "allowhuskspawn",
+  "version": "${version}",
+  "description": "${description}",
+  "entrypoints": [
+    {
+      "server_main": "com.notfoundname.allowhuskspawn.horizon.HorizonInit"
+    }
+  ],
+  "transformers": [],
+  "authors": ["notfoundname"],
+  "load_datapack_entry": false,
+  "is_hybrid": false,
+  "mixins": [
+    "allowhuskspawn.mixins.json"
+  ],
+  "dependencies": {
+    "minecraft": ">=26.1"
+  },
+  "wideners": []
+}
