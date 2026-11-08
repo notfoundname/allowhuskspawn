@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 public class SpawnPlacementsMixin {
 
     @Definition(id = "register", method = "Lnet/minecraft/world/entity/SpawnPlacements;register(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/SpawnPlacementType;Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;)V")
-    @Definition(id = "HUSK", field = "Lnet/minecraft/world/entity/EntityType;HUSK:Lnet/minecraft/world/entity/EntityType;")
+    @Definition(id = "HUSK", field = "Lnet/minecraft/world/entity/EntityTypes;HUSK:Lnet/minecraft/world/entity/EntityType;")
     @Expression("register(HUSK, ?, ?, ?)")
     @ModifyArg(
             method = "<clinit>",

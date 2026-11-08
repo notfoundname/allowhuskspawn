@@ -1,11 +1,10 @@
 plugins {
     id "java"
-    id "io.canvasmc.weaver.userdev" version "2.+"
-    id "io.canvasmc.horizon" version "1.+"
+    id "io.papermc.paperweight.userdev" version "2.0.0-beta.24"
 }
 
 group = "com.notfoundname"
-version = "1.0-SNAPSHOT"
+version = "1.1-SNAPSHOT"
 description = "Makes Husks follow Zombies' spawn rules."
 
 java {
@@ -14,13 +13,18 @@ java {
 
 repositories {
     mavenCentral()
+    maven {
+        name = "canvasmcPublic"
+        url = uri("https://maven.canvasmc.io/public")
+    }
 }
 
 dependencies {
-    horizon.horizonApi("1.+")
-    paperweight.paperDevBundle("26.1.2.build.+")
-
+    paperweight.paperDevBundle("26.3.build.+")
     compileOnly "space.vectrix.ignite:ignite-api:1.2.1"
+    compileOnly "io.canvasmc.horizon:core:1.0.0+90"
+    compileOnly "net.fabricmc:sponge-mixin:0.17.0+mixin.0.8.7"
+    compileOnly "io.github.llamalad7:mixinextras-common:0.5.3"
 }
 
 tasks {

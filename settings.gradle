@@ -1,9 +1,8 @@
 pluginManagement {
     repositories {
-        mavenCentral()
         gradlePluginPortal()
         maven {
-            url "https://maven.canvasmc.io/public"
+            url "https://repo.papermc.io/repository/maven-public/"
         }
     }
 }
